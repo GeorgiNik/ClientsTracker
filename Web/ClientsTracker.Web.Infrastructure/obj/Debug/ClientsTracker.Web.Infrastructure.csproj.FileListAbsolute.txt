@@ -1,0 +1,14 @@
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Web\MvcTemplate.Web.Infrastructure\bin\Debug\MvcTemplate.Web.Infrastructure.dll
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Web\MvcTemplate.Web.Infrastructure\bin\Debug\MvcTemplate.Web.Infrastructure.pdb
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Web\MvcTemplate.Web.Infrastructure\bin\Debug\AutoMapper.dll
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Web\MvcTemplate.Web.Infrastructure\bin\Debug\AutoMapper.xml
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Web\MvcTemplate.Web.Infrastructure\obj\Debug\MvcTemplate.Web.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Web\MvcTemplate.Web.Infrastructure\obj\Debug\MvcTemplate.Web.Infrastructure.dll
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Web\MvcTemplate.Web.Infrastructure\obj\Debug\MvcTemplate.Web.Infrastructure.pdb
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Web\ClientsTracker.Web.Infrastructure\bin\Debug\AutoMapper.dll
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Web\ClientsTracker.Web.Infrastructure\bin\Debug\AutoMapper.xml
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Web\ClientsTracker.Web.Infrastructure\obj\Debug\ClientsTracker.Web.Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Web\ClientsTracker.Web.Infrastructure\bin\Debug\ClientsTracker.Web.Infrastructure.dll
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Web\ClientsTracker.Web.Infrastructure\bin\Debug\ClientsTracker.Web.Infrastructure.pdb
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Web\ClientsTracker.Web.Infrastructure\obj\Debug\ClientsTracker.Web.Infrastructure.dll
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Web\ClientsTracker.Web.Infrastructure\obj\Debug\ClientsTracker.Web.Infrastructure.pdb

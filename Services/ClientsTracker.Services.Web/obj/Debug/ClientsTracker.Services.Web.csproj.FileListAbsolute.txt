@@ -1,0 +1,10 @@
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Services\MvcTemplate.Services.Web\bin\Debug\MvcTemplate.Services.Web.dll
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Services\MvcTemplate.Services.Web\bin\Debug\MvcTemplate.Services.Web.pdb
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Services\MvcTemplate.Services.Web\obj\Debug\MvcTemplate.Services.Web.csprojResolveAssemblyReference.cache
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Services\MvcTemplate.Services.Web\obj\Debug\MvcTemplate.Services.Web.dll
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Services\MvcTemplate.Services.Web\obj\Debug\MvcTemplate.Services.Web.pdb
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Services\ClientsTracker.Services.Web\obj\Debug\ClientsTracker.Services.Web.csprojResolveAssemblyReference.cache
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Services\ClientsTracker.Services.Web\bin\Debug\ClientsTracker.Services.Web.dll
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Services\ClientsTracker.Services.Web\bin\Debug\ClientsTracker.Services.Web.pdb
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Services\ClientsTracker.Services.Web\obj\Debug\ClientsTracker.Services.Web.dll
+C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\Services\ClientsTracker.Services.Web\obj\Debug\ClientsTracker.Services.Web.pdb
