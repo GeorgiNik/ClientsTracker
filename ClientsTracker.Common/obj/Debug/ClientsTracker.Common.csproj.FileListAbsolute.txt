@@ -1,10 +1,7 @@
-C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\MvcTemplate.Common\bin\Debug\MvcTemplate.Common.dll
-C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\MvcTemplate.Common\bin\Debug\MvcTemplate.Common.pdb
-C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\MvcTemplate.Common\obj\Debug\MvcTemplate.Common.csprojResolveAssemblyReference.cache
-C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\MvcTemplate.Common\obj\Debug\MvcTemplate.Common.dll
-C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\MvcTemplate.Common\obj\Debug\MvcTemplate.Common.pdb
-C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\ClientsTracker.Common\obj\Debug\ClientsTracker.Common.csprojResolveAssemblyReference.cache
-C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\ClientsTracker.Common\bin\Debug\ClientsTracker.Common.dll
-C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\ClientsTracker.Common\bin\Debug\ClientsTracker.Common.pdb
-C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\ClientsTracker.Common\obj\Debug\ClientsTracker.Common.dll
-C:\Users\georgi\Desktop\ASP.NET-MVC-Template-master\ASP.NET-MVC-Template-master\Source\ClientsTracker.Common\obj\Debug\ClientsTracker.Common.pdb
+C:\Users\georgenik\Desktop\ClientsTracker\ClientsTracker.Common\bin\Debug\ClientsTracker.Common.dll
+C:\Users\georgenik\Desktop\ClientsTracker\ClientsTracker.Common\bin\Debug\ClientsTracker.Common.pdb
+C:\Users\georgenik\Desktop\ClientsTracker\ClientsTracker.Common\obj\Debug\ClientsTracker.Common.csprojResolveAssemblyReference.cache
+C:\Users\georgenik\Desktop\ClientsTracker\ClientsTracker.Common\obj\Debug\ClientsTracker.Common.Resources.resources
+C:\Users\georgenik\Desktop\ClientsTracker\ClientsTracker.Common\obj\Debug\ClientsTracker.Common.csproj.GenerateResource.Cache
+C:\Users\georgenik\Desktop\ClientsTracker\ClientsTracker.Common\obj\Debug\ClientsTracker.Common.dll
+C:\Users\georgenik\Desktop\ClientsTracker\ClientsTracker.Common\obj\Debug\ClientsTracker.Common.pdb

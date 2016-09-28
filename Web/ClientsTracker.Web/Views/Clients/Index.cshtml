@@ -1,0 +1,116 @@
+﻿@using ClientsTracker.Common
+@using ClientsTracker.Web.Infrastructure.Clients
+@using Kendo.Mvc.UI
+@(Html.Kendo().Grid<ClientVM>()
+    .Name("grid")
+    .Columns(columns =>
+    {
+        columns.Bound(e => e.Name).Filterable(f => f.Multi(true).Search(true));
+        columns.Bound(e => e.Country).Filterable(f => f.Multi(true).Search(true));
+        columns.Bound(e => e.Email).Filterable(f => f.Multi(true).Search(true));
+        columns.Bound(e => e.Activity).Filterable(f => f.Multi(true).Search(true));
+        columns.Bound(e => e.ContactPerson).Filterable(f => f.Multi(true).Search(true));
+    })
+    .ClientDetailTemplateId("template")
+    .ToolBar(toolbar => toolbar.Template(
+        @<text>
+            <span class="grid-manage-label">@Resources.ManageClients</span>
+            <div class="input-group grid-search">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" name="searchbox" class="form-control" id="searchbox" placeholder="@Resources.Search" />
+            </div>
+            <button class="k-button k-grid-add pull-right"><i class='fa fa-plus'></i> @Resources.AddNewClient</button>
+        </text>))
+    .Editable(editable => editable.Mode(GridEditMode.PopUp))
+    .Filterable(f => f.Extra(false))
+    .Pageable(p => p.PageSizes(new int[] { 10, 20, 50 }))
+    .Sortable(sortable =>
+    {
+        sortable.SortMode(GridSortMode.SingleColumn);
+    })
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .PageSize(10)
+        .Model(model => model.Id(p => p.Id))
+        .Create(update => update.Action("Clients_Create", "Clients"))
+        .Read(read => read.Action("Clients_Read", "Clients"))
+        .Update(update => update.Action("Clients_Update", "Clients"))
+        .Destroy(update => update.Action("Clients_Destroy", "Clients"))
+    )
+)
+
+<script id="template" type="text/kendo-tmpl">
+    @(Html.Kendo().TabStrip()
+            .Name("tabStrip_#=Id#")
+            .SelectedIndex(0)
+            .Animation(animation => animation.Open(open => open.Fade(FadeDirection.In)))
+            .Items(items =>
+            {
+                items.Add().Text(Resources.MoreInfo)
+                  .Content(@<text>
+                    <div class='mysteryShopper-details'>
+                        <ul>
+                            <li><label>@Resources.Name:</label>#= Name #</li>
+                            <li><label>@Resources.Priority:</label>#= Priority == null ? ' ' : Priority #</li>
+                            <li><label>@Resources.Country:</label>#= Country == null ? ' ' : Country #</li>
+                            <li><label>@Resources.ContactPerson:</label>#= ContactPerson == null ? ' ' : ContactPerson #</li>
+                            <li><label>@Resources.Title:</label>#= Title == null ? ' ' : Title #</li>
+                            <li><label>@Resources.Email:</label>#= Email == null ? ' ' : Email #</li>
+                            <li><label>@Resources.PhoneNumber:</label>#= PhoneNumber == null ? ' ' : PhoneNumber #</li>
+                            <li><label>@Resources.WebSiteUrl:</label>#= WebSiteUrl == null ? ' ' : WebSiteUrl #</li>
+                            <li><label>@Resources.RegionsOfActivity:</label>#= RegionsOfActivity == null ? ' ' : RegionsOfActivity #</li>
+                            <li><label>@Resources.Type:</label>#= Type == null ? ' ' : Type #</li>
+                            <li><label>@Resources.Activity:</label>#= Activity == null ? ' ' : Activity #</li>
+                            <li><label>@Resources.CustomerCountries :</label>#= CustomerCountries == null ? ' ' : CustomerCountries #</li>
+                            <li><label>@Resources.ConversationAbout:</label>#= ConversationAbout == null ? ' ' : ConversationAbout #</li>
+                            <li><label>@Resources.Todo:</label>#= Todo == null ? ' ' : Todo #</li>
+                            <li><label>@Resources.Expectations:</label>#= Expectations == null ? ' ' : Expectations #</li>
+                            <li><label>@Resources.OrdersQuantity:</label>#= OrdersQuantity == null ? ' ' : OrdersQuantity #</li>
+                        </ul>
+                    </div>
+                </text>);
+            })
+            .ToClientTemplate())
+</script>
+<script type="text/javascript">
+    $(function () {
+        $("#searchbox").keyup(function () {
+            var val = $('#searchbox').val();
+            if (val == '') {
+                $("#grid").data("kendoGrid").dataSource.filter({});
+            }
+            else {
+                $("#grid").data("kendoGrid").dataSource.filter({
+                    logic: "or",
+                    filters: [
+                        {
+                            field: "Name",
+                            operator: "contains",
+                            value: val
+                        },
+                        {
+                            field: "Email",
+                            operator: "contains",
+                            value: val
+                        },
+                        {
+                            field: "Country",
+                            operator: "contains",
+                            value: val
+                        },
+                        {
+                            field: "ContactPerson",
+                            operator: "contains",
+                            value: val
+                        },
+                        {
+                            field: "Activity",
+                            operator: "contains",
+                            value: val
+                        }
+                    ]
+                });
+            }
+        });
+    });
+</script>

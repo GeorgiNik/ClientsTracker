@@ -3,11 +3,10 @@
     using System;
     using System.Data.Entity;
     using System.Linq;
-
-    using ClientsTracker.Data.Common.Models;
     using ClientsTracker.Data.Models;
-
+    using ClientsTracker.Data.Models.Models;
     using Microsoft.AspNet.Identity.EntityFramework;
+    using MysteryShopping.Data.Models.Entities;
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
@@ -15,6 +14,8 @@
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
+
+        public IDbSet<Client> Clients { get; set; }
 
         public static ApplicationDbContext Create()
         {

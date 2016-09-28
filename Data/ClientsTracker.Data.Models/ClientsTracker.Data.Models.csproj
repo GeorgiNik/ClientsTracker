@@ -60,17 +60,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationUser.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="Models\AuditInfo.cs" />
+    <Compile Include="Models\BaseModel{TKey}.cs" />
+    <Compile Include="Models\DeletableEntity.cs" />
+    <Compile Include="Models\IAuditInfo.cs" />
+    <Compile Include="Models\IDeletableEntity.cs" />
+    <Compile Include="Models\IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClientsTracker.Data.Common\ClientsTracker.Data.Common.csproj">
-      <Project>{edfe3c57-ef5b-4636-9ecc-d0baca6b6379}</Project>
-      <Name>MvcTemplate.Data.Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\Newtonsoft.Json.dll" />

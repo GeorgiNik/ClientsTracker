@@ -9,6 +9,8 @@
         {
             RegisterScripts(bundles);
             RegisterStyles(bundles);
+
+            BundleTable.EnableOptimizations = false;
         }
 
         private static void RegisterScripts(BundleCollection bundles)
@@ -16,18 +18,19 @@
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include("~/Scripts/jquery-{version}.js"));
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include("~/Scripts/jquery.validate*"));
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include("~/Scripts/bootstrap.js"));
-            bundles.Add(new ScriptBundle("~/bundles/KendoUI/kendo").Include(
-               "~/Scripts/KendoUI/kendo.all.min.js",
-               "~/Scripts/KendoUI/kendo.aspnetmvc.min.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/kendo").Include(
+                    "~/Scripts/KendoUI/kendo.all.min.js",
+                    "~/Scripts/KendoUI/kendo.aspnetmvc.min.js"));
         }
 
         private static void RegisterStyles(BundleCollection bundles)
         {
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/bootstrap.css", "~/Content/site.css"));
             bundles.Add(new StyleBundle("~/Content/datepicker").Include("~/Content/themes/base/datepicker.css"));
-            bundles.Add(new StyleBundle("~/Content/KendoUI/kendo").Include(
-                    "~/Content/KendoUI/kendo.common.min.css",
-                    "~/Content/KendoUI/kendo.default.min.css"));
+            bundles.Add(new StyleBundle("~/Content/Kendo/css").Include(
+                 "~/Content/Kendo/kendo.common.min.css",
+                 "~/Content/Kendo/kendo.bootstrap.min.css"));
         }
     }
 }

@@ -1,10 +1,15 @@
-﻿<!DOCTYPE html>
+﻿@using ClientsTracker.Common
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - MvcTemplate</title>
+    <title>@ViewBag.Title - ClientsTracker</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/Kendo/css")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/kendo")
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -15,25 +20,45 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("MvcTemplate", "Index", "Home", new { area = string.Empty }, new { @class = "navbar-brand" })
+                @Html.ActionLink("ClientsTracker", "Index", "Home", new { area = string.Empty }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home", new { area = string.Empty }, null)</li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">@Resources.Clients<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>@Html.ActionLink(@Resources.Clients, "Index", "Clients", new { area = string.Empty }, null)</li>
+                            </ul>
+                        </li>
+
+                        if (User.IsInRole(GlobalConstants.AdministratorRoleName))
+                        {
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">@Resources.Admin<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink(Resources.Users, "Details", "Users", new { area = "Administration" }, null)</li>
+                                </ul>
+                            </li>
+                        }
+                    }
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
-    <div class="container body-content">
+<div class="container body-content">
+    <div id="content">
+        <br />
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.UtcNow.Year - MvcTemplate</p>
-        </footer>
     </div>
+    <hr/>
+    <footer>
+        <p>&copy; @DateTime.UtcNow.Year - ClientsTracker</p>
+    </footer>
+</div>
 
-    @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>

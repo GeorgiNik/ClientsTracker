@@ -7,8 +7,8 @@
 
     using ClientsTracker.Data.Models;
     using ClientsTracker.Services.Data;
-    using ClientsTracker.Web.Areas.Administration.ViewModels;
     using ClientsTracker.Web.Infrastructure.Mapping;
+    using ClientsTracker.Web.Infrastructure.Users;
     using Kendo.Mvc.UI;
     using Kendo.Mvc.Extensions;
 
@@ -28,13 +28,13 @@
 
         public ActionResult ApplicationUsers_Read([DataSourceRequest] DataSourceRequest request)
         {
-            var result = this.userService.All().To<UsersViewModel>().ToDataSourceResult(request);
+            var result = this.userService.All().To<UsersVM>().ToDataSourceResult(request);
 
             return this.Json(result);
         }
 
         [AcceptVerbs(HttpVerbs.Post)]
-        public ActionResult ApplicationUsers_Update([DataSourceRequest] DataSourceRequest request, UsersViewModel model)
+        public ActionResult ApplicationUsers_Update([DataSourceRequest] DataSourceRequest request, UsersVM model)
         {
             if (this.ModelState.IsValid)
             {
@@ -60,7 +60,7 @@
         [AcceptVerbs(HttpVerbs.Post)]
         public ActionResult ApplicationUsers_Destroy(
             [DataSourceRequest] DataSourceRequest request,
-            UsersViewModel applicationUser)
+            UsersVM applicationUser)
         {
             var entity = Mapper.Map<ApplicationUser>(applicationUser);
             this.userService.Remove(entity);

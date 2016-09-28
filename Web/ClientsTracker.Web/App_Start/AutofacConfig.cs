@@ -46,8 +46,7 @@
         private static void RegisterServices(ContainerBuilder builder)
         {
             builder.Register(x => new ApplicationDbContext())
-                .As<DbContext>()
-                .InstancePerRequest();
+                .As<ApplicationDbContext>().InstancePerRequest();
             builder.Register(x => new HttpCacheService())
                 .As<ICacheService>()
                 .InstancePerRequest();
@@ -58,9 +57,11 @@
             var servicesAssembly = Assembly.GetAssembly(typeof(IUserService));
             builder.RegisterAssemblyTypes(servicesAssembly).AsImplementedInterfaces();
 
-            builder.RegisterGeneric(typeof(DbRepository<>))
-                .As(typeof(IDbRepository<>))
-                .InstancePerRequest();
+            builder.RegisterGeneric(typeof(DeletableRepository<>))
+                .As(typeof(IDeletableRepository<>));
+
+            builder.RegisterGeneric(typeof(Repository<>))
+                .As(typeof(IRepository<>));
 
             builder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly())
                 .AssignableTo<BaseController>().PropertiesAutowired();

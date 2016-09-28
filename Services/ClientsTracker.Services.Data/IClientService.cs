@@ -1,17 +1,18 @@
 ﻿namespace ClientsTracker.Services.Data
 {
     using System.Linq;
+    using ClientsTracker.Web.Infrastructure.Clients;
 
     public interface IClientService
     {
         IQueryable<ClientVM> GetAll();
 
-        ClientVM Get();
+        ClientVM Get(int id);
 
-        ClientVM Create();
+        ClientVM Create(ClientVM vm);
 
-        void Update();
+        void Update(ClientVM vm);
 
-        void Delete();
+        void Delete(int id);
     }
 }

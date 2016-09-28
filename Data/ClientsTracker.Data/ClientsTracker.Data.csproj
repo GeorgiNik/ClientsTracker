@@ -60,27 +60,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
-    <Compile Include="Client.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\ClientsTracker.Common\ClientsTracker.Common.csproj">
-      <Project>{701F322F-AA01-4DDC-90B6-6935981C1E73}</Project>
-      <Name>MvcTemplate.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ClientsTracker.Data.Common\ClientsTracker.Data.Common.csproj">
-      <Project>{edfe3c57-ef5b-4636-9ecc-d0baca6b6379}</Project>
-      <Name>MvcTemplate.Data.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ClientsTracker.Data.Models\ClientsTracker.Data.Models.csproj">
-      <Project>{048df115-fad9-4bd4-9ba0-d99dfd32a2b2}</Project>
-      <Name>MvcTemplate.Data.Models</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\Newtonsoft.Json.dll" />
@@ -91,6 +76,16 @@
     <AdditionalFiles Include="..\..\stylecop.json">
       <Link>stylecop.json</Link>
     </AdditionalFiles>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ClientsTracker.Common\ClientsTracker.Common.csproj">
+      <Project>{701F322F-AA01-4DDC-90B6-6935981C1E73}</Project>
+      <Name>ClientsTracker.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClientsTracker.Data.Models\ClientsTracker.Data.Models.csproj">
+      <Project>{048DF115-FAD9-4BD4-9BA0-D99DFD32A2B2}</Project>
+      <Name>ClientsTracker.Data.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
