@@ -1,6 +1,5 @@
 C:\Users\georgenik\Desktop\ClientsTracker\ClientsTracker.Common\bin\Debug\ClientsTracker.Common.dll
 C:\Users\georgenik\Desktop\ClientsTracker\ClientsTracker.Common\bin\Debug\ClientsTracker.Common.pdb
-C:\Users\georgenik\Desktop\ClientsTracker\ClientsTracker.Common\obj\Debug\ClientsTracker.Common.csprojResolveAssemblyReference.cache
 C:\Users\georgenik\Desktop\ClientsTracker\ClientsTracker.Common\obj\Debug\ClientsTracker.Common.Resources.resources
 C:\Users\georgenik\Desktop\ClientsTracker\ClientsTracker.Common\obj\Debug\ClientsTracker.Common.csproj.GenerateResource.Cache
 C:\Users\georgenik\Desktop\ClientsTracker\ClientsTracker.Common\obj\Debug\ClientsTracker.Common.dll
