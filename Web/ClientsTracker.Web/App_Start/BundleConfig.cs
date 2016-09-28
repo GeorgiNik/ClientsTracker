@@ -29,8 +29,8 @@
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/bootstrap.css", "~/Content/site.css"));
             bundles.Add(new StyleBundle("~/Content/datepicker").Include("~/Content/themes/base/datepicker.css"));
             bundles.Add(new StyleBundle("~/Content/Kendo/css").Include(
-                 "~/Content/Kendo/kendo.common.min.css",
-                 "~/Content/Kendo/kendo.bootstrap.min.css"));
+                 "~/Content/Kendo/kendo.common-nova.min.css",
+                 "~/Content/Kendo/kendo.nova.min.css"));
         }
     }
 }

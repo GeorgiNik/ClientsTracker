@@ -2,6 +2,7 @@
 {
     using System.Linq;
     using AutoMapper;
+    using AutoMapper.QueryableExtensions;
     using ClientsTracker.Data;
     using ClientsTracker.Data.Common;
     using ClientsTracker.Data.Models;
@@ -19,7 +20,7 @@
 
         public IQueryable<ClientVM> GetAll()
         {
-            return this.clients.GetAll().To<ClientVM>();
+            return this.clients.GetAll().ProjectTo<ClientVM>();
         }
 
         public ClientVM Get(int id)

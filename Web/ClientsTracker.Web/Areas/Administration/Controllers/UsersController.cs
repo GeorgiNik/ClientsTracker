@@ -4,7 +4,7 @@
     using System.Web.Mvc;
 
     using AutoMapper;
-
+    using AutoMapper.QueryableExtensions;
     using ClientsTracker.Data.Models;
     using ClientsTracker.Services.Data;
     using ClientsTracker.Web.Infrastructure.Mapping;
@@ -28,7 +28,7 @@
 
         public ActionResult ApplicationUsers_Read([DataSourceRequest] DataSourceRequest request)
         {
-            var result = this.userService.All().To<UsersVM>().ToDataSourceResult(request);
+            var result = this.userService.All().ProjectTo<UsersVM>().ToDataSourceResult(request);
 
             return this.Json(result);
         }

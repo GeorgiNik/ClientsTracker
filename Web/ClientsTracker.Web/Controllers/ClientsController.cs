@@ -7,6 +7,7 @@
     using Kendo.Mvc.Extensions;
     using Kendo.Mvc.UI;
 
+    [Authorize]
     public class ClientsController : Controller
     {
         private readonly IClientService clientsService;
