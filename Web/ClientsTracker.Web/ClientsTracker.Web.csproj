@@ -751,7 +751,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Scripts\KendoUI\kendo.all.min.js.map" />
     <Content Include="Scripts\KendoUI\kendo.aspnetmvc.min.js.map" />
-    <None Include="Views\Clients\Index.cshtml" />
+    <Content Include="Views\Clients\Index.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Currency.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Date.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\DateTime.cshtml" />
